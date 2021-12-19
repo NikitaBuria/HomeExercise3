@@ -166,10 +166,10 @@ public class Exercise9 {
     for (int i=0;i<randomCode.length;i++)
         {
             randomCode[i]=getRandomNumber();
-            for (int j=0;j<randomCode.length&&j!=i;j++)
+            for (int j=0;j<randomCode.length;j++)
             {
 
-                if (randomCode[i]==randomCode[j])
+                if (randomCode[i]==randomCode[j]&&j!=i)
                 {
                     randomCode[j]=getRandomNumber();
                 }
